@@ -54,6 +54,7 @@ const DeleteModal = ({
             h="50px"
             fontSize="lg"
             color="#4A4A4A"
+            data-cy="modal-delete-cancel-button"
           >
             Batal
           </Button>
