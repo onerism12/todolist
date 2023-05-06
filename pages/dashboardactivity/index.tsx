@@ -70,6 +70,7 @@ const DashboardActivity = () => {
         duration: 3000,
         isClosable: true,
         position: "top-right",
+        id: "#modal-information",
       });
     } catch (error) {
       console.error(error);
@@ -95,6 +96,7 @@ const DashboardActivity = () => {
             leftIcon={<Icon as={IoAddSharp} w={8} h={8} />}
             _hover={{ bg: "#16ABF8" }}
             isLoading={isLoading}
+            data-cy="activity-add-button"
           >
             Tambah
           </Button>
@@ -142,6 +144,7 @@ const DashboardActivity = () => {
                     h={6}
                     onClick={() => handleDeleteClick(item.id)}
                     cursor="pointer"
+                    data-cy="activity-item-delete-button"
                   />
                   <DeleteModal
                     id={itemIdToDelete}
