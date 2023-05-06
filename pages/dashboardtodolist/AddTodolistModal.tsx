@@ -91,6 +91,7 @@ function AddTodolistModal({ isOpen, onClose }: Props) {
               NAMA LIST ITEM
             </Text>
             <Input
+              data-cy="todo-title"
               size="lg"
               type="text"
               name="title"
